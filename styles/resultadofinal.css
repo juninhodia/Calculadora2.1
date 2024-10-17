@@ -1,0 +1,64 @@
+
+#relatorio-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+
+    position: relative; /* Para garantir que o botão seja posicionado dentro dessa div */
+    align-items: center;
+    background: #ffffff;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    transition: transform 0.3s;
+
+    margin-top: 30px;
+}
+
+#relatorio-geral h2 {
+    font-weight: 600;
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#relatorio-geral .resultados-resumidos p {
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#relatorio-geral .resultado-secao {
+    margin-top: 25px;
+}
+
+#relatorio-geral .grafico-container {
+    margin-top: 20px;
+}
+
+#relatorio-geral canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    #relatorio-geral {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #relatorio-geral h2 {
+        font-size: 1.4em;
+    }
+
+    #relatorio-geral .resultados-resumidos p {
+        font-size: 0.9em;
+    }
+}
